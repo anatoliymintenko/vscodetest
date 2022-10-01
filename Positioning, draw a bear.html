@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      background-color: darkturquoise;
+      height: 40px;
+    }
+
+    .nav-item {
+      /* height: 40px; */
+      position: relative;
+      display: inline;
+      margin: 16px;
+      color: white;
+      line-height: 40px;
+      /* how to vertically align the list items inside a header?
+  Damn that took me long!!! */
+    }
+
+    .content {
+      height: 5000px;
+      background-color: beige;
+      position: relative;
+    }
+
+    .head {
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      position: absolute;
+      top: calc(100% - 90%);
+      left: calc(100% - 80%);
+      /* position: absolute;
+  top: 7.5%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+    }
+
+    .ear_left {
+      width: 30px;
+      height: 40px;
+      background-color: brown;
+      position: absolute;
+      top: calc(-20%);
+      left: calc(-15%);
+    }
+
+    .ear_right {
+      width: 30px;
+      height: 40px;
+      background-color: brown;
+      position: absolute;
+      top: calc(-20%);
+      left: calc(100%);
+    }
+
+    .eye_left {
+      border-radius: 100%;
+      background-color: burlywood;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: calc(25%);
+      left: calc(25%);
+    }
+
+    .eye_right {
+      border-radius: 100%;
+      background-color: burlywood;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: calc(25%);
+      left: calc(60%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Products</li>
+        <li class="nav-item">Contacts</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content">
+    <div class="head">
+      <div class="ear_right"></div>
+      <div class="ear_left"></div>
+      <div class="eye_right"></div>
+      <div class="eye_left"></div>
+    </div>
+  </main>
+</body>
+
+</html>
